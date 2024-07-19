@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(jobRouter);
 
-mongoose.connect('mongodb://localhost:27017/jobApplication').then(() => {
+mongoose.connect('mongodb+srv://attendanceSystem:123@cluster0.szni8ib.mongodb.net/jobapplication').then(() => {
     console.log('MongoDB connected');
 }).catch((err) => {
     console.log("mongoDB not connected",err);
